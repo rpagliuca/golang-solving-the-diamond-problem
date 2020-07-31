@@ -33,7 +33,7 @@ type TypeWithoutAmbiguity struct {
 }
 
 func (t TypeWithoutAmbiguity) Method() {
-	// Here we remove the ambiguity, chosing
+	// Here we remove the ambiguity, choosing
 	// which method to call (Type1.Method or Type2.Method)
 	t.Type2.Method()
 }
